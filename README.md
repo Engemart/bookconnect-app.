@@ -3,7 +3,7 @@
 Aplicativo desenvolvido em parceria com a **CIA do Livro** para a disciplina de desenvolvimento mobile.  
 Nosso objetivo é criar uma plataforma que conecte a livraria e seus clientes com uma experiência moderna, rápida e acessível.
 
-
+---
 
 # Objetivo
 
@@ -13,60 +13,36 @@ Estabelecer vínculos entre a livraria e os leitores, permitindo:
 - Carrinho de compras e histórico de pedidos
 - Login e perfil do usuário
 
+---
 
 ## 🧱 Estrutura do Projeto
 
 📂 `/docs/`
-- `fluxo-navegacao.pdf`: (import graphviz
-
-# Criar o fluxograma de navegação do aplicativo BookConnect
-fluxo = graphviz.Digraph(format='png')
-fluxo.attr(rankdir='LR', size='10')
-
-# Telas principais
-fluxo.node('Splash', 'Splash (Inicial)')
-fluxo.node('Login', 'Login/Cadastro')
-fluxo.node('Home', 'Home (Destaques)')
-fluxo.node('Categorias', 'Categorias de Livros')
-fluxo.node('Detalhes', 'Detalhe do Livro')
-fluxo.node('Buscar', 'Busca')
-fluxo.node('Favoritos', 'Favoritos')
-fluxo.node('Carrinho', 'Carrinho de Compras')
-fluxo.node('Checkout', 'Finalizar Compra')
-fluxo.node('Perfil', 'Perfil do Usuário')
-fluxo.node('Historico', 'Histórico de Pedidos')
-
-# Conexões entre as telas
-fluxo.edges([
-    ('Splash', 'Login'),
-    ('Login', 'Home'),
-    ('Home', 'Categorias'),
-    ('Home', 'Buscar'),
-    ('Home', 'Favoritos'),
-    ('Home', 'Perfil'),
-    ('Categorias', 'Detalhes'),
-    ('Buscar', 'Detalhes'),
-    ('Favoritos', 'Detalhes'),
-    ('Detalhes', 'Carrinho'),
-    ('Carrinho', 'Checkout'),
-    ('Perfil', 'Historico')
-])
-
-fluxo.render('fluxograma_bookconnect', cleanup=False)
-)  
+- `fluxo-navegacao.pdf` ou `fluxograma_bookconnect.png`: Representação visual do fluxo de telas do app  
 - `arquitetura-app.pdf`: Arquitetura e divisão lógica  
-- `telas/`: Imagens com os layouts das telas
+- `telas/`: ![NOW](https://github.com/user-attachments/assets/ad98b8c4-ca56-40e7-8c72-a5f2d4852dd8)
+
 
 📂 `/prototype/`
 - Arquivo original Figma (opcional, `.fig`)
 
 ---
 
+## 🔁 Fluxo de Navegação do App
+
+
+
+> 🔽 **Salve a imagem como** `docs/fluxograma_bookconnect.png` **e ela será exibida automaticamente no GitHub.**
+
+![Fluxograma do App](docs/fluxograma_bookconnect.png)
+
+---
+
 # Protótipo no Figma
 
-👉 [Acesse o protótipo do BookConnect no Figma (clique aqui)](https://www.figma.com/design/1iF5VWKa3iyu6izd71kbv2/Sem-t%C3%ADtulo?node-id=0-1&m=dev&t=nQY2YYlAJPEGS6GE-1))
+👉 [Acesse o protótipo do BookConnect no Figma (https://www.figma.com/design/1iF5VWKa3iyu6izd71kbv2/Sem-t%C3%ADtulo?node-id=0-1&m=dev&t=nQY2YYlAJPEGS6GE-1)]
 
-
+---
 
 # Tecnologias previstas para a próxima fase
 
@@ -77,12 +53,11 @@ fluxo.render('fluxograma_bookconnect', cleanup=False)
 
 ---
 
-#  Integrantes do Grupo
+# Integrantes do Grupo
 
-- Nome 1 — Naamã
-- Nome 2 — Washingtom
-- Nome 3 — Otavio 
-
+- Naamã
+- Washingtom
+- Otavio
 
 ---
 
@@ -93,7 +68,6 @@ fluxo.render('fluxograma_bookconnect', cleanup=False)
 ✅ Fluxo de navegação  
 ✅ Repositório público com versionamento no GitHub
 
----
 
 
 
