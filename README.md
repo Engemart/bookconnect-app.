@@ -17,7 +17,43 @@ Estabelecer vínculos entre a livraria e os leitores, permitindo:
 ## 🧱 Estrutura do Projeto
 
 📂 `/docs/`
-- `fluxo-navegacao.pdf`: Fluxo de telas do app  
+- `fluxo-navegacao.pdf`: (import graphviz
+
+# Criar o fluxograma de navegação do aplicativo BookConnect
+fluxo = graphviz.Digraph(format='png')
+fluxo.attr(rankdir='LR', size='10')
+
+# Telas principais
+fluxo.node('Splash', 'Splash (Inicial)')
+fluxo.node('Login', 'Login/Cadastro')
+fluxo.node('Home', 'Home (Destaques)')
+fluxo.node('Categorias', 'Categorias de Livros')
+fluxo.node('Detalhes', 'Detalhe do Livro')
+fluxo.node('Buscar', 'Busca')
+fluxo.node('Favoritos', 'Favoritos')
+fluxo.node('Carrinho', 'Carrinho de Compras')
+fluxo.node('Checkout', 'Finalizar Compra')
+fluxo.node('Perfil', 'Perfil do Usuário')
+fluxo.node('Historico', 'Histórico de Pedidos')
+
+# Conexões entre as telas
+fluxo.edges([
+    ('Splash', 'Login'),
+    ('Login', 'Home'),
+    ('Home', 'Categorias'),
+    ('Home', 'Buscar'),
+    ('Home', 'Favoritos'),
+    ('Home', 'Perfil'),
+    ('Categorias', 'Detalhes'),
+    ('Buscar', 'Detalhes'),
+    ('Favoritos', 'Detalhes'),
+    ('Detalhes', 'Carrinho'),
+    ('Carrinho', 'Checkout'),
+    ('Perfil', 'Historico')
+])
+
+fluxo.render('fluxograma_bookconnect', cleanup=False)
+)  
 - `arquitetura-app.pdf`: Arquitetura e divisão lógica  
 - `telas/`: Imagens com os layouts das telas
 
