@@ -1,72 +1,43 @@
-# BookConnect
+# 📚 BookConnect – CIA do Livro
 
-Aplicativo desenvolvido em parceria com a **CIA do Livro** para a disciplina de desenvolvimento mobile.  
-Nosso objetivo é criar uma plataforma que conecte a livraria e seus clientes com uma experiência moderna, rápida e acessível.
-
----
-
-# Objetivo
-
-Estabelecer vínculos entre a livraria e os leitores, permitindo:
-- Visualização de livros por categorias
-- Detalhes e recomendações personalizadas
-- Carrinho de compras e histórico de pedidos
-- Login e perfil do usuário
+**BookConnect** é um aplicativo mobile desenvolvido em parceria com a empresa fictícia **CIA do Livro**, com o objetivo de estabelecer um vínculo moderno e eficiente entre a livraria e seus clientes.
 
 ---
 
-## 🧱 Estrutura do Projeto
+## 🎯 Objetivo do Projeto
 
-📂 `/docs/`
-- `fluxo-navegacao.pdf` ou `fluxograma_bookconnect.png`: Representação visual do fluxo de telas do app  
-- `arquitetura-app.pdf`: Arquitetura e divisão lógica  
-- `telas/`: ![NOW](https://github.com/user-attachments/assets/ad98b8c4-ca56-40e7-8c72-a5f2d4852dd8)
+Conceber e implementar um aplicativo robusto e amigável para dispositivos móveis, promovendo uma experiência de usuário fluida, com:
 
-
-📂 `/prototype/`
-- Arquivo original Figma (opcional, `.fig`)
+- Design atraente
+- Navegabilidade intuitiva
+- Facilidade de acesso às informações
 
 ---
 
-## 🔁 Fluxo de Navegação do App
+## 🧩 Funcionalidades Planejadas
 
-
-
-> 🔽 **Salve a imagem como** `docs/fluxograma_bookconnect.png` **e ela será exibida automaticamente no GitHub.**
-
-![Fluxograma do App](docs/fluxograma_bookconnect.png)
-
----
-
-# Protótipo no Figma
-
-👉 [Acesse o protótipo do BookConnect no Figma (https://www.figma.com/design/1iF5VWKa3iyu6izd71kbv2/Sem-t%C3%ADtulo?node-id=0-1&m=dev&t=nQY2YYlAJPEGS6GE-1)]
+- Visualizar lista de livros
+- Pesquisar por título, autor ou categoria
+- Acessar detalhes de um livro
+- Adicionar/remover itens do carrinho
+- Finalizar compras
+- Login/Cadastro de usuário
+- Visualizar histórico de pedidos
 
 ---
 
-# Tecnologias previstas para a próxima fase
+## 📱 Protótipos
 
-- React Native (ou Flutter)
-- Firebase (autenticação, banco de dados e storage)
-- Styled Components
-- Context API (ou Redux)
+Os mockups foram desenvolvidos no Figma e representam a experiência visual esperada do app.  
+Acesse o protótipo online aqui:
 
----
-
-# Integrantes do Grupo
-
-- Naamã
-- Washingtom
-- Otavio
+📎 [Protótipo no Figma](https://figma.com/coloque-o-link-aqui)
 
 ---
 
-## 📅 Entrega - Parte 1
+## 🗂 Estrutura deste repositório
 
-✅ Estrutura do app  
-✅ Protótipo no Figma  
-✅ Fluxo de navegação  
-✅ Repositório público com versionamento no GitHub
+
 
 
 
